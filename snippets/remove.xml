@@ -187,6 +187,7 @@
   <remove-project name="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/modules/Connectivity" />
   <remove-project name="platform/packages/modules/DnsResolver" />
+  <remove-project name="platform/packages/modules/IntentResolver" />
   <remove-project name="platform/packages/modules/NeuralNetworks"/>
   <remove-project name="platform/packages/modules/NetworkStack" />
   <remove-project name="platform/packages/modules/Permission" />
