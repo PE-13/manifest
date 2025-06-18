@@ -23,10 +23,6 @@
           fetch="https://gitlab.com/userariii/"
           revision="thirteen" />
 
-  <remote name="pixel-gms"
-          fetch="https://gitlab.com/userariii/"
-          revision="thirteen_OEM" />
-
   <!-- External repos -->
   <project path="external/avb" name="external_avb" remote="pixel" />
   <project path="external/boringssl" name="external_boringssl" remote="pixel" />
