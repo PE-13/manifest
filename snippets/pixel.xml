@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="fork"
+          fetch="https://github.com/PE-13"
+          revision="thirteen-plus" />
+
   <remote name="pixel"
           fetch="https://github.com/PixelExperience"
           revision="thirteen"
@@ -45,8 +49,8 @@
   <project path="external/dng_sdk" name="external_dng_sdk" remote="pixel-exc"/>
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="pixel-exc" />
-  <project path="frameworks/base" name="frameworks_base" remote="pixel-exc-plus" />
+  <project path="frameworks/av" name="frameworks_av" remote="fork" revision="thirteen"/>
+  <project path="frameworks/base" name="frameworks_base" remote="fork" />
   <project path="frameworks/native" name="frameworks_native" remote="pixel-exc" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
@@ -56,7 +60,7 @@
   <!-- General repos -->
   <project path="art" name="art" remote="pixel" />
   <project path="bionic" name="bionic" remote="pixel" />
-  <project path="build/make" name="build" remote="pixel-exc">
+  <project path="build/make" name="build" remote="fork" revision="thirteen">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
